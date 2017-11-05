@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
     puts("Enter Number B(MAX_LEN < 10000):");
     b_len = get_str(str_b,MAX);
     result = add(str_a,a_len,str_b,b_len);
-    if(*result = '0')
+    if(*result == '0')
         result ++;
     printf("A+B=%s\n",result);
 
@@ -47,7 +47,7 @@ char * add_float_float(const char * str_a,int a_len,const char * str_b,int b_len
         ap ++;
         dis_a_to_p ++;
     }
-    longer_float = (a_len - dis_a_to_p) > (a_len - dis_a_to_p) ? (a_len - dis_a_to_p - 1):(a_len - dis_a_to_p - 1);
+    longer_float = (a_len - dis_a_to_p) > (b_len - dis_b_to_p) ? (a_len - dis_a_to_p - 1):(b_len - dis_b_to_p - 1);
     for(i = longer_float;i > 0;i --){
         if(str_a[dis_a_to_p + i] == '\0')
             temp_a = 0;
