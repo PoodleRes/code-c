@@ -71,9 +71,11 @@ char * add_float_float(const char * str_a,int a_len,const char * str_b,int b_len
             temp ++;
         }
         ip = add_int_int(str_b,dis_b_to_p,ip,ip_len);
+        ip ++;
     }else
         ip = add_int_int(str_a,dis_a_to_p,str_b,dis_b_to_p);
     for(ip_len = 0,i = 0;*ip != '\0';ip_len ++,i ++){
+
         res[i] = *ip;
         ip ++;
     }
