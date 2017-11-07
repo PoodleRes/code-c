@@ -4,7 +4,6 @@ void swap(int *,int *);
 void show(int (*)[4],int (*)[4]);
 
 
-
 int main(int argc, char const *argv[]) {
     int arr1[4][4],arr2[4][4];
     int i,j,k = 0;
