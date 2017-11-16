@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int sqr(int,int);
-int operate(int,int,int);
+int sqr(int,int);//这个是计算整数a 的 b次方
+int operate(int,int,int);//这是操作 核心函数
 
 
 int main(void) {
-    int candy_start,res;
-    int seconds,candy_add;
+    int candy_start,res;//candy_start是起始糖果数，res是结果
+    int seconds,candy_add;//seconds是秒数,candy_add是增加的数量
     seconds = sqr(10,9) + 7;
     scanf("%d%d",&candy_start,&candy_add);
     printf("%d\n",operate(candy_start,candy_add,seconds));
