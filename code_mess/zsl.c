@@ -28,7 +28,7 @@ int operate(int start,int add,int seconds){
 
 int sqr(int a,int b){
     int i;
-    long long int res = 1;
+    int res = 1;
     for(i = 0;i < b;i ++)
         res *= a;
     return res;
