@@ -84,7 +84,7 @@ _Bool * to_binary(char ch){
     int i;
     static _Bool temp[8];
     for(i = 7;i >= 0;i --){
-        temp[i] = ch % 2;
+        temp[i] = ch & 1;
         ch >>= 1;
     }
     return temp;
@@ -143,7 +143,7 @@ _Bool * to_binary_de(char ch){
         if(ch == base[i])
             break;
     for(j = 5;j >= 0;j --){
-        temp[j] = i % 2;
+        temp[j] = i & 1;
         i >>= 1;
     }
     return temp;
