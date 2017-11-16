@@ -8,7 +8,8 @@ int main(void) {
     int candy_start,res;
     int seconds,candy_add;
     seconds = sqr(10,9) + 7;
-    printf("%d\n",operate(4,5,seconds));
+    scanf("%d%d",&candy_start,&candy_add);
+    printf("%d\n",operate(candy_start,candy_add,seconds));
 
 
     return 0;
